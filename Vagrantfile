@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.vm.hostname = "netbox-demo"
 
-  config.vm.network :forwarded_port, guest: 80, host: 8080, id: 'http'
+  config.vm.network :forwarded_port, guest: 80, host: 8000, id: 'http'
 
   config.vm.synced_folder "./config_files", "/vagrant"
 
